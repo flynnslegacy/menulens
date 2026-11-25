@@ -23,13 +23,13 @@
 ## Français
 
 **Sous-titre** (30 car. max)
-Votre Mac en une seule icône
+Barre des menus en une icône
 
 **Texte promotionnel** (170 car. max)
-Batterie, Wi-Fi, Bluetooth, VPN, son, réseau, mémoire, CPU et disque réunis dans une seule icône élégante. Gratuit, sans pub, sans pistage.
+Batterie, Wi-Fi, Bluetooth, VPN, son, réseau, mémoire, CPU et disque réunis dans une seule icône élégante. Sans pub, sans pistage.
 
 **Mots-clés** (100 car. max)
-barre des menus,batterie,wifi,bluetooth,vpn,cpu,mémoire,disque,réseau,airpods,moniteur,système
+barre des menus,batterie,wifi,bluetooth,vpn,cpu,mémoire,disque,réseau,écouteurs,moniteur,système
 
 **Description**
 
@@ -70,13 +70,13 @@ Première version de Menulens.
 ## English (U.S.)
 
 **Subtitle**
-Your Mac in one menu bar icon
+Your menu bar in one icon
 
 **Promotional text**
-Battery, Wi-Fi, Bluetooth, VPN, sound, network, memory, CPU and disk in one elegant menu bar icon. Free, no ads, no tracking.
+Battery, Wi-Fi, Bluetooth, VPN, sound, network, memory, CPU and disk in one elegant menu bar icon. No ads, no tracking.
 
 **Keywords**
-menu bar,battery,wifi,bluetooth,vpn,cpu,memory,disk,network,airpods,monitor,stats,system
+menu bar,battery,wifi,bluetooth,vpn,cpu,memory,disk,network,headphones,monitor,stats,system
 
 **Description**
 
@@ -127,3 +127,14 @@ Menulens is a menu bar app (LSUIElement): it has no Dock icon and no main window
 ## Captures d'écran
 
 `docs/appstore/screenshots/fr/` et `docs/appstore/screenshots/en/` : 5 images 2880 × 1800.
+
+## Règles retenues après l'examen du 24 novembre 2026
+
+Apple a refusé le build 1 pour quatre raisons, corrigées dans le build 1.0.0 (2) :
+
+- **5.2.5** : pas de « Mac » dans le sous-titre, pas de logo Apple dans les captures, pas d'« AirPods » dans les mots-clés.
+- **2.3.7** : aucune mention de prix (« gratuit », « sans abonnement ») dans les captures ni le texte promotionnel. La description est le seul endroit toléré.
+- **4** : le bouton pour quitter doit afficher le texte « Quitter », pas une icône seule.
+- **3.1.1** : pas de lien de don dans la version App Store (sinon In-App Purchase obligatoire). Le bouton reste dans la version GitHub, retiré par `-D APPSTORE`.
+
+Les captures se régénèrent avec `scripts/appstore-screenshots.sh` (après `scripts/build-appstore.sh`).

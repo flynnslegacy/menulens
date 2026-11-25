@@ -26,7 +26,7 @@ enum FrenchStrings {
         "Normal": "Normal", "Fair": "Moyen", "Serious": "Élevé", "Critical": "Critique",
 
         // Main popover
-        "Profile": "Profil", "Menulens Settings…": "Réglages de Menulens…", "Quit Menulens": "Quitter Menulens",
+        "Profile": "Profil", "Menulens Settings…": "Réglages de Menulens…", "Quit Menulens": "Quitter Menulens", "Quit": "Quitter",
         "No devices connected": "Aucun appareil connecté", "%@ of %@": "%@ sur %@", "%@ free": "%@ libres",
         "%@ user · %@ system": "%@ utilisateur · %@ système", "This device sets its own volume.": "Cet appareil règle son propre volume.",
 

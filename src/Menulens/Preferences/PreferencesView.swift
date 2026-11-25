@@ -129,16 +129,20 @@ struct AboutTab: View {
             Divider().padding(.horizontal, 60)
             VStack(alignment: .leading, spacing: 6) {
                 Label(L("No analytics, no tracking, no network requests"), systemImage: "hand.raised.fill")
-                Label(L("Everything is read on your Mac through Apple's APIs"), systemImage: "apple.logo")
+                Label(L("Everything is read on your Mac through Apple's APIs"), systemImage: "lock.fill")
                 Label(L("Only the metrics you can see are sampled"), systemImage: "leaf.fill")
+                #if !APPSTORE
                 Label(L("Every feature included, free"), systemImage: "gift.fill")
+                #endif
             }
             .font(.callout)
             Spacer()
+            #if !APPSTORE
             Text(L("Menulens is free. If it helps you, you can support its development."))
                 .font(.callout).foregroundStyle(.secondary).multilineTextAlignment(.center)
             Button(L("Make a Donation ❤️"), action: Donation.open)
                 .buttonStyle(.borderedProminent).tint(.pink).controlSize(.large)
+            #endif
             Button(L("Quit Menulens")) { NSApp.terminate(nil) }
         }
         .padding(24)
