@@ -11,7 +11,7 @@
 | Langue principale | Français |
 | Catégorie principale | Utilitaires |
 | Catégorie secondaire | Productivité |
-| Prix | Gratuit, toutes les régions |
+| Prix | 1,99 € (achat unique, France comme pays de base, conversion automatique ailleurs), 175 pays |
 | Copyright | 2026 David Markowicz |
 | Classification | 4+ (aucun contenu sensible) |
 | URL d'assistance | https://github.com/flynnslegacy/menulens |
